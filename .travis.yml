@@ -3,6 +3,6 @@ language: python
 python:
   - 3.6
 
-scripts:
+script:
   - python -V
   - python hello.py
