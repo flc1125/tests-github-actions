@@ -1,0 +1,5 @@
+on: push
+
+jobs:
+  runs-on: ubuntu-16.04
+  run: python -V
