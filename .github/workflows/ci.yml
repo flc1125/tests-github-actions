@@ -1,7 +1,8 @@
 on: push
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
     - name: tests
       run: python -V
