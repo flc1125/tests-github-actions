@@ -12,6 +12,7 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: ${{ matrix.python }}
-      - run:
-        - python -V
-        - python hello.py
+      - name: python version
+        run: python -V
+      - name: run hello.py
+        run: python hello.py
