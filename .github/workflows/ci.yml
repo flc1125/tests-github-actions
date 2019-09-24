@@ -17,3 +17,7 @@ jobs:
         run: |
           python -V
           python hello.py
+      - name: install php
+        uses: flc1125/tests@master
+      - name: run php
+        run: php hello.php
