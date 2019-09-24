@@ -1,0 +1,12 @@
+on: push
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+        
+    steps:
+      - uses: actions/checkout@master
+      - name: install php
+        uses: flc1125/tests@master
+      - name: run php
+        run: php hello.php
