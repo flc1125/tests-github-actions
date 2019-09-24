@@ -1,0 +1,5 @@
+name: 'php-env'
+description: 'php-env-tests'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
