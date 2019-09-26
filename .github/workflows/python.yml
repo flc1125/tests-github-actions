@@ -18,3 +18,4 @@ jobs:
         run: |
           python -V
           python hello.py
+          touch /usr/local/ssdb/log.txt
