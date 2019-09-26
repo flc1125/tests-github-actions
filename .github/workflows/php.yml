@@ -10,4 +10,12 @@ jobs:
       - name: install php
         uses: flc1125/tests@master
       - name: run php
-        run: php hello.php
+        run: |
+          php hello.php
+          redis-cli
+    
+    services:
+      redis:
+        image: redis:5.0.6-alpine
+        ports:
+          - 6379:6379
