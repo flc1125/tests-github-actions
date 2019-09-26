@@ -18,5 +18,5 @@ jobs:
         run: |
           python -V
           python hello.py
-          mkdir -p /usr/local/ssdb
-          touch /usr/local/ssdb/log.txt
+          sudo mkdir -p /usr/local/ssdb
+          sudo touch /usr/local/ssdb/log.txt
