@@ -10,7 +10,11 @@ jobs:
       - name: run php
         run: |
           php hello.php
-          redis-cli
+      - name: push
+        run: |
+          touch ./1.log
+          git checkout -b other
+          git push origin other --force
     
     services:
       redis:
